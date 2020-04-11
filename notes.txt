@@ -13,3 +13,17 @@
 # Signal to Noise Ratio (SNR) = μ/σ
 # Coefficient of Variation: cv = μ/σ * 100
 
+ADC: Analog to Digital Converter
+    Needed for the computer to process
+    2 Main Modules:
+        -Sampler/Hold Module
+            -keeps the voltage constant while the convergion is taking place
+            -allowed to change only at periodic intervals
+            -converts Independent variable
+        -Quantizer
+            -converts dependent Variable
+
+Proper Sampling: Aility to reconstruct exact analog signal from samples
+
+Sampling Theory/Nyquist Theorem: SamplingFrequency >= 2*MaxFrequency
+

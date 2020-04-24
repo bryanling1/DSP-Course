@@ -1,8 +1,12 @@
 from scipy import signal
-from matplotlib import pyplot
+from matplotlib import pyplot as plt
 import numpy as np 
 
 b = signal.firwin(80, 0.5, window=("kaiser", 8))
-pyplot.plot(b)
-pyplot.show()
-print(b)
+
+w, h = signal.freqz(b)
+
+plt.semilogy(w, np.abs(h))
+plt.ylabel("Amplitude (db)")
+plt.xlabel("Frequncy (rad/sample)")
+plt.show()
